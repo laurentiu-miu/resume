@@ -14,4 +14,3 @@ Open `http://localhost:8000` in a browser.
 
 In the repository settings, open **Pages**, choose **Deploy from a branch**, then select the root of the default branch. No build step is required.
 
--
