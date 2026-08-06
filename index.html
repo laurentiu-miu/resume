@@ -35,7 +35,7 @@
           <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
           <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
           <li class="nav-item"><a class="nav-link" href="#credentials">Credentials</a></li>
-          <li class="nav-item ms-lg-2"><a class="btn btn-nav" href="resume-LaurentiuMiu.pdf" download><i class="bi bi-download" aria-hidden="true"></i> Download CV</a></li>
+          <li class="nav-item ms-lg-2"><button class="btn btn-nav" id="download-cv" type="button"><i class="bi bi-file-earmark-pdf" aria-hidden="true"></i> Download CV as PDF</button></li>
         </ul>
       </div>
     </div>
@@ -227,13 +227,16 @@
       <div class="footer-cta"><p>Have a complex system to build?</p><a href="mailto:miulaurctin@gmail.com">Let's talk<span>.</span></a></div>
       <div class="footer-bottom">
         <span>&copy; <span id="current-year">2026</span> Laurentiu Miu</span>
-        <div><a href="tel:+40726778017">+40 726 778 017</a><a href="mailto:miulaurctin@gmail.com">miulaurctin@gmail.com</a></div>
+        <div><a href="mailto:miulaurctin@gmail.com">miulaurctin@gmail.com</a></div>
         <a class="back-top" href="#top" aria-label="Back to top"><i class="bi bi-arrow-up"></i></a>
       </div>
     </div>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
-  <script>document.getElementById('current-year').textContent = new Date().getFullYear();</script>
+  <script>
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+    document.getElementById('download-cv').addEventListener('click', () => window.print());
+  </script>
 </body>
 </html>
