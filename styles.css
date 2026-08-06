@@ -122,7 +122,6 @@ a { color: inherit; }
 .credential-card > span:last-child { display: flex; min-width: 0; flex-direction: column; align-items: flex-start; }
 .credential-card strong { font-size: .92rem; line-height: 1.35; }
 .credential-card small { margin-top: .65rem; color: var(--accent); font-size: .7rem; font-weight: 700; }
-.credential-card-hfi .credential-icon { width: 88px; height: 88px; }
 .credential-icon { display: grid; width: 65px; height: 65px; place-items: center; color: var(--accent); border: 1px solid var(--line); font-size: 1.5rem; }
 .credential-type { margin: 0 0 .5rem; color: #747e8c; font-size: .72rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
 .credentials-link { display: inline-block; margin: 1.5rem 0 3rem; color: var(--accent); font-size: .85rem; font-weight: 700; text-decoration: none; }
