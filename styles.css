@@ -54,7 +54,7 @@ a { color: inherit; }
 .expertise-grid span::before { content: "+"; margin-right: .7rem; color: var(--accent); }
 
 .ai-section { padding: 0 0 5rem; }
-.ai-card { position: relative; display: grid; grid-template-columns: 140px 1fr 1fr; gap: 3rem; align-items: center; padding: 4.5rem; color: var(--white); background: var(--ink-soft); overflow: hidden; }
+.ai-card { position: relative; display: grid; grid-template-columns: 140px 1fr 1fr; gap: 1.5rem 3rem; align-items: center; padding: 4.5rem; color: var(--white); background: var(--ink-soft); overflow: hidden; }
 .ai-card::after { content: "AI"; position: absolute; right: -20px; bottom: -80px; color: rgba(255,255,255,.035); font-size: 17rem; font-weight: 700; line-height: 1; }
 .ai-card h2 { max-width: 670px; font-size: clamp(2rem, 4vw, 3.5rem); }
 .ai-card p:not(.eyebrow) { max-width: 650px; margin: 1.5rem 0 0; color: rgba(255,255,255,.68); line-height: 1.7; }
@@ -63,6 +63,16 @@ a { color: inherit; }
 .ai-topics { position: relative; z-index: 1; }
 .ai-topics div { display: flex; gap: 1rem; align-items: center; padding: .95rem 0; border-bottom: 1px solid rgba(255,255,255,.13); font-size: .95rem; font-weight: 600; }
 .ai-topics i { color: var(--accent); font-size: 1.2rem; }
+.ai-toolkit { position: relative; z-index: 1; grid-column: 2 / -1; border-top: 1px solid rgba(255,255,255,.13); }
+.ai-toolkit summary { padding: 1rem 0; color: var(--mint); font-size: .88rem; font-weight: 700; letter-spacing: .04em; cursor: pointer; list-style: none; }
+.ai-toolkit summary::-webkit-details-marker { display: none; }
+.ai-toolkit summary::before { content: "+"; display: inline-block; width: 1.2rem; color: var(--accent); font-size: 1.2rem; line-height: 1; }
+.ai-toolkit[open] summary::before { content: "\2212"; }
+.ai-card .ai-toolkit-intro { margin: .3rem 0 1rem; font-size: .9rem; }
+.ai-toolkit ul { margin: 0; padding: 0 0 .5rem; list-style: none; }
+.ai-toolkit li { padding: .65rem 0; color: rgba(255,255,255,.68); border-bottom: 1px solid rgba(255,255,255,.09); font-size: .84rem; line-height: 1.55; }
+.ai-toolkit a { color: var(--white); text-underline-offset: .2em; }
+.ai-toolkit a:hover { color: var(--mint); }
 
 .section-heading { display: flex; justify-content: space-between; gap: 3rem; align-items: end; margin-bottom: 5rem; padding-bottom: 2rem; border-bottom: 1px solid var(--line); }
 .section-heading > p { max-width: 440px; margin: 0; color: #647083; line-height: 1.7; }
